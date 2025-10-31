@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <style>
+        .skill-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 22px;
+            box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+            transition: 0.4s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+        }
+
+        .progress {
+            height: 18px;
+            width: 100%;
+            background: #ddd;
+            border-radius: 10px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4a90e2, #6a11cb);
+            width: 0%;
+            border-radius: 10px;
+            transition: 1.4s;
+        }
+
+        .skill-card:hover .progress-bar {
+            width: var(--skill-level);
+        }
+
+        .skill-icon {
+            font-size: 22px;
+            margin-right: 10px;
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Curriculum Vitae</h1>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="profil.html">PROFIL</a>
+    <a href="pendidikan.html">PENDIDIKAN</a>
+    <a href="skill.html">SKILL</a>
+</nav>
+
+<div class="container">
+    <h2>Computer Skill</h2>
+
+    <div class="skill-card">
+        <span class="skill-icon"><i class="fas fa-file-word"></i></span><b>Microsoft Office</b>
+        <div class="progress">
+            <div class="progress-bar" style="--skill-level: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-card">
+        <span class="skill-icon"><i class="fas fa-code"></i></span><b>HTML & CSS</b>
+        <div class="progress">
+            <div class="progress-bar" style="--skill-level: 80%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-card">
+        <span class="skill-icon"><i class="fas fa-paint-brush"></i></span><b>Canva</b>
+        <div class="progress">
+            <div class="progress-bar" style="--skill-level: 85%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-card">
+        <span class="skill-icon"><i class="fas fa-desktop"></i></span><b>Desain Grafis Sederhana</b>
+        <div class="progress">
+            <div class="progress-bar" style="--skill-level: 75%;"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
