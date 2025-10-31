@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <style>
+        .profile-wrapper {
+            text-align: center;
+            animation: fadeUp 1s ease;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4a90e2;
+            box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+            margin-bottom: 18px;
+            transition: 0.4s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+        }
+
+        .bio-card {
+            background: #ffffff;
+            padding: 22px;
+            border-radius: 12px;
+            margin-top: 22px;
+            box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+            transition: 0.4s;
+        }
+
+        .bio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+        }
+
+        .bio-item {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .bio-item i {
+            color: #6a11cb;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Curriculum Vitae</h1>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="profil.html">PROFIL</a>
+    <a href="pendidikan.html">PENDIDIKAN</a>
+    <a href="skill.html">SKILL</a>
+</nav>
+
+<div class="container profile-wrapper">
+
+    <!-- FOTO PROFIL (ganti sesuai foto kamu) -->
+    <img src="WhatsApp Image 2025-10-20 at 14.54.16_a3ae0495.jpg" class="profile-img">
+
+    <h2 style="margin-bottom: 5px;">Cahaya Bintang Haryanto</h2>
+    <p style="font-size: 16px; margin-bottom: 15px; color: gray;">Mahasiswa Teknik Informatika</p>
+
+    <div class="bio-card">
+        <p class="bio-item"><i class="fas fa-user"></i><b>Nama :</b> Cahaya Bintang Haryanto</p>
+        <p class="bio-item"><i class="fas fa-map-marker-alt"></i><b>Alamat :</b> Cikampek</p>
+        <p class="bio-item"><i class="fas fa-envelope"></i><b>Email :</b> cahaya@example.com</p>
+        <p class="bio-item"><i class="fas fa-phone"></i><b>No. HP :</b> 08xxxxxxxxxx</p>
+        <p class="bio-item"><i class="fas fa-calendar"></i><b>Tanggal Lahir :</b> 01 Januari 2005</p>
+    </div>
+
+</div>
+
+</body>
+</html>
