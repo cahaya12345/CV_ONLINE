@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4a90e2, #6a11cb);
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    animation: slideDown 1s ease;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+nav {
+    background: rgba(255,255,255,0.13);
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a {
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: white;
+    color: #4a90e2;
+    transform: translateY(-4px);
+}
+
+/* CONTAINER (KOTAK UTAMA) */
+.container {
+    width: 82%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(15px);
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    text-align: center;
+    color: #4a2bbf;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+/* TEXT */
+p, ul, li {
+    font-size: 17px;
+    color: #2e2e2e;
+    line-height: 1.8;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideDown { from { transform: translateY(-35px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes fadeUp { from { transform: translateY(35px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav a { padding: 10px 18px; font-size: 14px; }
+    .container { width: 90%; padding: 22px; }
+}
